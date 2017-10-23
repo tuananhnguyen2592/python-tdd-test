@@ -8,7 +8,7 @@ def home_page(request):
     # link: https://stackoverflow.com/questions/12518517/request-post-getsth-vs-request-poststh-difference
     # using request.POST.get
     # return render(request, 'home.html', {
-    #     'new_item_text': request.POST['item_text'],
+    #     'new_item_text': request.POST.get('item_text', ''),
     # })
 
     # using request.POST
